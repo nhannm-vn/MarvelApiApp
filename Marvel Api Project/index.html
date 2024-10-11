@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel API App</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- code here -->
+    <div class="container">
+        <div>
+            <form class="input-container">
+                <input class="form-control input" id="input-box" type="text">
+                <button class="button" id="submit-button">Submit</button>
+            </form>
+        </div>
+        <!-- show list -->
+        <div style="position: relative;">
+            <div class="list"></div>
+        </div>
+        <!-- show information -->
+        <div class="display-container" id="show-container">
+            <div class="character">
+                <div class="character-img">
+                    <img src="https://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55.jpg" alt="Hình lỗi gòi">
+                </div>
+                <h1>IRON MAN</h1>
+                <p>
+                    Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark
+                    instead created an advanced suit of armor to save his life and escape captivity. Now with a new
+                    outlook on life, Tony uses his money and intelligence to make the world a safer, better place as
+                    Iron Man.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.6%;
+}
+
+body {
+    font-size: 1.6rem;
+    /* font */
+    font-family: "Poppins", sans-serif;
+    /* background color */
+    background-color: #ff0026;
+}
+
+/* container */
+.container {
+    background-color: #171821;
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 2rem;
+    left: 50%;
+    border-radius: 1.5rem;
+    box-shadow: 7px 8px 5px #b72c2c;
+}
+
+/* input-container */
+.input-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    width: 69.5%;
+    height: 4rem;
+    background-color: #3a3939;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.input:focus {
+    background-color: #3a3939;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    box-shadow: none;
+    outline: none;
+    outline-offset: none;
+}
+
+.button {
+    width: 20%;
+    outline: none;
+    border-radius: 0.7rem;
+    color: #ffffff;
+    background-color: #ff0026;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+/* nơi hiển thị sản phẩm */
+.display-container {
+    padding: 2rem;
+}
+
+/* character */
+.character-img {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.character-img img {
+    display: block;
+    width: 20rem;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.character h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 2rem 0;
+}
+
+.character p {
+    color: #565555;
+    font-size: 1.8rem;
+    padding: 0 4rem;
+}
+
+/* list */
+
+.list {
+    display: none;
+    background-color: #555;
+    position: absolute;
+    width: 69.5%;
+    color: #ffffff;
+    z-index: 1;
+    transform: translateX(4%);
+    max-height: 25rem;
+    /* Chiều cao cố định của div */
+    overflow-y: auto;
+    /* Bật tính năng cuộn dọc khi nội dung vượt quá */
+    border: 2px solid #ddd;
+}
+
+.autocomplete-items {
+    padding: 0.5rem;
+}
+
+.autocomplete-items:hover {
+    background-color: #ddd;
+    color: #171821;
+}
